@@ -6,6 +6,8 @@
 - JAR `target/aula_iqs09-1.0.0.jar` executado com sucesso nos JDKs 21 e 24.
 - Javadoc gerado em `target/reports/apidocs/index.html`, com doclint e falha obrigatória em warnings.
 
+A validação também foi repetida diretamente na pasta final solicitada, com o Maven e o cache padrão do computador: `mvn -B clean verify javadoc:javadoc`, resultado BUILD SUCCESS. O bytecode de `Main.class` foi conferido: major version 61 (Java 17).
+
 ## Testes por classe
 
 | Classe | Casos aprovados |
