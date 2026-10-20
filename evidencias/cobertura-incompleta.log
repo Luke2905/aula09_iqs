@@ -1,0 +1,63 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< br.edu.fatec:aula_iqs09 >-----------------------
+[INFO] Building Aula 09 - Versionamento e Git Avan�ado 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ aula_iqs09 ---
+[INFO] Deleting C:\Users\julia\Documents\Playground\aula_iqs09\target
+[INFO] 
+[INFO] --- jacoco:0.8.13:prepare-agent (preparar-cobertura) @ aula_iqs09 ---
+[INFO] argLine set to -javaagent:C:\\Users\\julia\\Documents\\Playground\\tmp\\iqs09_m2\\org\\jacoco\\org.jacoco.agent\\0.8.13\\org.jacoco.agent-0.8.13-runtime.jar=destfile=C:\\Users\\julia\\Documents\\Playground\\aula_iqs09\\target\\jacoco.exec
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ aula_iqs09 ---
+[INFO] skip non existing resourceDirectory C:\Users\julia\Documents\Playground\aula_iqs09\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ aula_iqs09 ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 6 source files with javac [debug release 17] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ aula_iqs09 ---
+[INFO] skip non existing resourceDirectory C:\Users\julia\Documents\Playground\aula_iqs09\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ aula_iqs09 ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 4 source files with javac [debug release 17] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ aula_iqs09 ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running br.edu.fatec.iqs09.NotificacaoServiceTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.139 s -- in br.edu.fatec.iqs09.NotificacaoServiceTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jacoco:0.8.13:report (relatorio-cobertura) @ aula_iqs09 ---
+[INFO] Loading execution data file C:\Users\julia\Documents\Playground\aula_iqs09\target\jacoco.exec
+[INFO] Analyzed bundle 'Aula 09 - Versionamento e Git Avan�ado' with 5 classes
+[INFO] 
+[INFO] --- jacoco:0.8.13:check (exigir-cobertura-notificacoes) @ aula_iqs09 ---
+[INFO] Loading execution data file C:\Users\julia\Documents\Playground\aula_iqs09\target\jacoco.exec
+[INFO] Analyzed bundle 'aula_iqs09' with 5 classes
+[WARNING] Rule violated for class br.edu.fatec.iqs09.NotificacaoService: lines covered ratio is 0.83, but expected minimum is 1.00
+[WARNING] Rule violated for class br.edu.fatec.iqs09.NotificacaoService: branches covered ratio is 0.50, but expected minimum is 1.00
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.743 s
+[INFO] Finished at: 2026-10-19T21:10:32-03:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.jacoco:jacoco-maven-plugin:0.8.13:check (exigir-cobertura-notificacoes) on project aula_iqs09: Coverage checks have not been met. See log for details. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

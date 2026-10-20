@@ -16,6 +16,9 @@ public class Calculadora {
      * @throws ArithmeticException se o divisor for zero
      */
     public int divide(int a, int b) {
+        if (b == 0) {
+            throw new ArithmeticException("Divisor não pode ser zero"); // Fail fast
+        }
         return a / b;
     }
 }
