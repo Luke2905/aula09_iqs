@@ -41,7 +41,7 @@ A primeira execução precisa baixar as dependências Maven.
 | 100% de cobertura da nova classe | Testes JUnit e verificação obrigatória pelo JaCoCo |
 | Javadoc automático | `.github/workflows/javadoc.yml` |
 | Conventional Commits | `docs/CONVENTIONAL_COMMITS.md` |
-| Proteção, dois revisores e PR remoto | Configuração e roteiro em `docs/GITHUB.md`; dependem de autenticação e de revisores humanos |
+| Proteção, dois revisores e PR remoto | Estado real e roteiro em `docs/GITHUB.md`; aprovações dependem de revisores humanos |
 
 ## Fidelidade aos arquivos fornecidos
 

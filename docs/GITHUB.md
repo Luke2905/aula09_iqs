@@ -2,11 +2,11 @@
 
 Repositório indicado: https://github.com/Luke2905/aula09_iqs.git
 
-As branches, commits, testes e workflows podem ser preparados localmente. Enviar branches, abrir PRs, executar Actions e aplicar regras no GitHub requer autenticação com permissão de escrita/administração. Duas aprovações exigem revisores humanos distintos do autor.
+A conta Luke2905 foi autenticada pelo gerenciador de credenciais do Windows e possui permissão administrativa neste repositório. A publicação e os checks remotos serão registrados abaixo. Duas aprovações exigem revisores humanos distintos do autor.
 
 ## Publicar
 
-O remote `origin` está configurado para o repositório acima. Após autenticar sua conta no Git/GitHub:
+O remote `origin` está configurado para o repositório acima. Com a conta autenticada, os comandos de publicação são:
 
 ```shell
 git push -u origin main
@@ -20,7 +20,7 @@ git push -u origin release/v1.0
 git push origin v1.0.0
 ```
 
-Os merges locais são simulações e não criam PRs no site. Como branches já integradas não têm diferenças para um novo PR, para reproduzir o fluxo remoto desde o início utilize um repositório de exercício e os commits anteriores aos merges indicados em `docs/GIT_FLOW.md`.
+Os merges locais são simulações e não criam PRs no site. Para permitir a revisão real das notificações, `develop` foi posicionada antes dessa feature; `exemplo/develop-integrado` preserva a simulação completa. A branch `main` contém a entrega executável completa.
 
 ## Proteção de branches
 
@@ -44,7 +44,7 @@ O teste local correspondente está em `evidencias/notificacoes-com-erro.log`. O 
 
 ## Revisão válida
 
-A versão correta está em `main`, `develop` e `release/v1.0`. Para um novo PR avaliado por colegas, crie uma nova feature a partir de `develop`, mantenha os testes passando e use o modelo de PR. Só integre depois de duas aprovações humanas e da resolução de todos os comentários.
+A versão correta está em `main`, `release/v1.0` e `feature/notificacoes`. O PR real `feature/notificacoes -> develop` deve aguardar duas aprovações humanas, build aprovado e resolução dos comentários. `develop` permanece no estado anterior à feature até a integração desse PR.
 
 ## Javadoc automático
 
