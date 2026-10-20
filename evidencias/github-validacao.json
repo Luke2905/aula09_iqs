@@ -1,0 +1,96 @@
+{
+  "data_local": "2026-10-19",
+  "timezone": "America/Sao_Paulo",
+  "repositorio": "https://github.com/Luke2905/aula09_iqs",
+  "execucoes": [
+    {
+      "id": 39347674712,
+      "name": "PR Validation",
+      "event": "workflow_dispatch",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/Luke2905/aula09_iqs/actions/runs/39347674712",
+      "head_branch": "feature/notificacoes",
+      "head_sha": "130aaf6b9cc9e0abbd3aadf799ee786801850f1b"
+    },
+    {
+      "id": 39347449754,
+      "name": "PR Validation",
+      "event": "workflow_dispatch",
+      "status": "completed",
+      "conclusion": "failure",
+      "html_url": "https://github.com/Luke2905/aula09_iqs/actions/runs/39347449754",
+      "head_branch": "teste/pr-com-erro",
+      "head_sha": "0279d817b9498fe9b8e4c4d92c38523affeb7611"
+    },
+    {
+      "id": 39347447609,
+      "name": "PR Validation",
+      "event": "workflow_dispatch",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/Luke2905/aula09_iqs/actions/runs/39347447609",
+      "head_branch": "feature/notificacoes",
+      "head_sha": "524a7eea931cfc840ea675c674a1f84f43058a43"
+    },
+    {
+      "id": 39347139370,
+      "name": "Javadoc",
+      "event": "workflow_dispatch",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/Luke2905/aula09_iqs/actions/runs/39347139370",
+      "head_branch": "main",
+      "head_sha": "fd1c29fc5f92cf97564fe4764349e21cd75df9c6"
+    }
+  ],
+  "pull_requests": [
+    {
+      "number": 1,
+      "url": "https://github.com/Luke2905/aula09_iqs/pull/1",
+      "state": "open",
+      "head": "130aaf6b9cc9e0abbd3aadf799ee786801850f1b",
+      "mergeable_state": "unknown",
+      "checks": [
+        {
+          "name": "build",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/Luke2905/aula09_iqs/actions/runs/39347674712/job/118384115201"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "url": "https://github.com/Luke2905/aula09_iqs/pull/2",
+      "state": "closed",
+      "head": "0279d817b9498fe9b8e4c4d92c38523affeb7611",
+      "mergeable_state": "unknown",
+      "checks": [
+        {
+          "name": "build",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/Luke2905/aula09_iqs/actions/runs/39347449754/job/118383375722"
+        }
+      ]
+    }
+  ],
+  "configuracao_protecao_main_develop": {
+    "required_status_checks": {
+      "strict": true,
+      "contexts": [
+        "build"
+      ]
+    },
+    "enforce_admins": true,
+    "required_pull_request_reviews": {
+      "dismiss_stale_reviews": true,
+      "require_code_owner_reviews": false,
+      "required_approving_review_count": 2
+    },
+    "restrictions": null,
+    "required_conversation_resolution": true
+  },
+  "pendencia": "Duas aprovacoes de revisores humanos para integrar o PR #1."
+}

@@ -94,3 +94,7 @@ Execute a aplicação em `main`. A branch `teste/pr-com-erro` é intencionalment
 |/  
 * 64d38f7 chore: prepara projeto Maven Java 17
 ```
+
+## Ajustes de CI após a publicação
+
+A opção `workflow_dispatch` foi adicionada ao workflow original, mantendo `pull_request`, as actions `@v3`, JDK 17 e `mvn clean test`. A configuração foi propagada a `develop` e às branches dos PRs. A feature de notificações recebeu um merge de `develop` para cumprir a verificação de branch atualizada; o novo commit passou no build remoto.

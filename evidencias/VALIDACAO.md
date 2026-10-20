@@ -39,3 +39,7 @@ As contagens foram conferidas no XML real do JaCoCo. A regra de build exige 100%
 Os logs estão nesta pasta. Essas falhas didáticas foram executadas antes da restauração do código correto. A branch `main` contém a versão aprovada pelos testes locais; `teste/pr-com-erro` preserva o erro para a demonstração do CI.
 
 A execução real do GitHub Actions e o estado das proteções/PRs são registrados em `docs/GITHUB.md` e `github-validacao.json` após a publicação. Aprovações humanas não são simuladas como aprovações reais.
+
+## GitHub Actions - JDK 17
+
+A versão corrigida passou no GitHub com 42 testes e o check de cobertura aprovado. A versão intencionalmente incorreta falhou pelos 19 casos inválidos e o PR #2 foi fechado sem merge. O workflow Javadoc também passou e gerou o artefato remoto. O check atual do PR #1 está aprovado, aguardando duas revisões humanas. Os eventos dessas execuções foram `workflow_dispatch`; as URLs e os SHAs exatos constam no JSON de evidências.
