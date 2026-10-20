@@ -49,7 +49,7 @@ O arquivo chamado `Aula_09_IQS.java` reúne comandos Git, YAML e trechos Java; e
 
 O método `Calculadora.divide(int a, int b)` mantém a divisão inteira, o `if (b == 0)` e a mensagem **Divisor não pode ser zero**. O comentário `# Fail fast` foi convertido em `// Fail fast`, sintaxe válida em Java.
 
-O workflow mantém `actions/checkout@v3`, `actions/setup-java@v3`, Java 17 e `mvn clean test`. Foi acrescentado `distribution: 'temurin'`, campo obrigatório do `setup-java@v3` que não aparece no exemplo. A confirmação está na [documentação oficial da action](https://github.com/actions/setup-java/tree/v3).
+O workflow mantém `actions/checkout@v3`, `actions/setup-java@v3`, Java 17 e `mvn clean test`. Foi acrescentada a opção `workflow_dispatch` para permitir executar o mesmo check manualmente, mantendo o gatilho `pull_request`. Foi acrescentado `distribution: 'temurin'`, campo obrigatório do `setup-java@v3` que não aparece no exemplo. A confirmação está na [documentação oficial da action](https://github.com/actions/setup-java/tree/v3).
 
 O enunciado não estabelece regras para a senha nem o comportamento do header: para a simulação, foi adotado mínimo de 8 caracteres, rejeitando nulo/vazio/somente espaços, e retorno vazio para header nulo. O nome `enviarEmail` foi preservado e o destinatário foi recebido por parâmetro para permitir os testes de formato.
 
