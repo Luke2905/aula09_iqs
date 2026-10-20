@@ -22,6 +22,9 @@ public class NotificacaoService {
      * @throws IllegalArgumentException se o e-mail for nulo ou tiver formato inválido
      */
     public String enviarEmail(String email) {
+        if (email == null || !EMAIL_PATTERN.matcher(email).matches()) {
+            throw new IllegalArgumentException("Email inválido");
+        }
         return "Email enviado para: " + email + " (simulação)";
     }
 }
