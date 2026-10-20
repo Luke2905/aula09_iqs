@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Aula IQS 09" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="br.edu.fatec.iqs09.Main" />
+    <module name="aula_iqs09" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
