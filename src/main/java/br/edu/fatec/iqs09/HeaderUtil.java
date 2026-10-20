@@ -14,6 +14,6 @@ public class HeaderUtil {
      * @return valor sem espaços externos, ou uma string vazia se for nulo
      */
     public String normalizar(String header) {
-        return header.trim();
+        return header == null ? "" : header.trim();
     }
 }
